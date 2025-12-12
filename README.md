@@ -157,6 +157,15 @@ sudo ufw allow 514
 
 ### Run love
 
+First be sure to give execution permissions to the love binary:
+```bash
+# Change directory to your directory containing love
+cd /<YOUR_PATH_CONTAINING_LOVE>
+
+# Grant execution permission to the love binary
+sudo chmod +x ./love
+```
+
 Assuming you have the IRIX distribution you'd like to install at a 
 directory aliased by `LABELS.UNIX.TXT` (in this case, `/mnt/IRIX/5.3/dist` for `love.53`)
 you should be ready to run:
